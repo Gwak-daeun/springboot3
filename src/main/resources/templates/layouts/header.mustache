@@ -34,3 +34,13 @@
         </div>
     </div>
 </nav>
+
+<!--msg 사용 범위 설정-->
+{{#msg}}
+<!--  메시지 창 작성  -->
+<div class="alert alert-primary alert-dismissible">
+    {{msg}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+{{/msg}}
