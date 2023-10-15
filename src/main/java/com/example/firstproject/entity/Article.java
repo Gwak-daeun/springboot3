@@ -22,4 +22,13 @@ public class Article {
     public Long getId() {
         return this.id;
     }
+
+    public void patch(Article article) {
+        if (article.title != null) {
+            this.title = article.title;
+        }
+        if (article.content != null) {
+            this.content = article.content;
+        }
+    }
 }
